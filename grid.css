@@ -1,0 +1,347 @@
+
+@font-face {
+    font-family: PlexesPro;
+    src: url(PlexesProBook.otf);
+}
+
+body {
+    background-color: #eeeeee;
+    font-family:PlexesPro;
+    font-size:18px;
+    margin:0;
+}
+
+.navbar {
+  background-color:#666666;
+  position:fixed;
+  width:100%;
+
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float:block;
+    text-align: left;
+}
+
+.navbar li {
+  line-height: 64px;
+    height: 64px;
+    display:inline-block;
+    padding-left:24px;
+    color:#9b9b9b;
+    font-size: 20px;
+
+}
+
+#mobile {
+  display:none;
+    height: 56px;
+    display:inline-block;
+    padding-left:16px;
+    color:#FFFFFF;
+    font-size: 40px;
+    margin-top:14px;
+}
+
+
+span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin-top:8px;
+  margin-bottom: 8px;
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 1px;
+  z-index: 1;
+}
+
+
+#viewing {
+  color:#FFFFFF;
+}
+
+.child-close {
+  margin-top:56px;
+  line-height:56px
+  height:56px;
+  width:100%;
+  text-align:center;
+  font-size: 20px;
+  color:#FFFFFF;
+  background-color:#444444;
+  display:none;
+  position:fixed;
+}
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#sidebar {
+  height: 640px;
+  width:100%;
+  padding-top: 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+}
+
+#overview-card {
+  height: 226px;
+  padding-top: 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+}
+
+#fuel-profile-card {
+  height: 219px;
+  padding-top: 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+  order: 1;
+}
+
+#activity-feed {
+  height: 931px;
+  padding-top: 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+  order:2;
+}
+
+#preferences-card {
+  height: 361px;
+  padding-top: 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+  order:3;
+}
+
+#equipment-card {
+  height: 222px;
+  padding-top: 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+  order:4;
+}
+
+.grid {
+  margin: auto;
+  padding-left:24px;
+  padding-right:24px;
+  text-align: center;
+  color:#FF00FF;
+}
+/* Above 1280px */
+
+@media screen and (min-width: 1280px) {
+  #mobile {
+    display:none;
+  }
+    .grid {
+      width:1280px;
+      margin-bottom:24px;
+            }
+            [class*='col-'] {
+              padding-right: 24px;
+              padding-top:24px;
+              float:left;
+            }
+
+              .col-8-12 {
+              width: 66.66666%;
+              margin-left:419px;
+              margin-top:64px;
+            }
+
+            .col-4-12 {
+              width: 33.33%;
+              position:fixed;
+                  margin-top:64px;
+            }
+
+#sidebar {
+  width:395px;
+}
+
+            #fuel-profile-card, #activity-feed, #equipment-card, #preferences-card {
+              width:48%;
+              display: inline-block;
+              margin-top:24px;
+
+            }
+
+            #activity-feed {
+                      margin-left:24px;
+                      float:right;
+                        }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 960px) {
+
+  #mobile {
+    display:none;
+  }
+  .grid {
+    width:960px;
+    margin-bottom:24px;
+          }
+          [class*='col-'] {
+            padding-right: 24px;
+            padding-top:24px;
+            float:left;
+          }
+
+            .col-8-12 {
+            width: 66.66666%;
+            margin-left:320px;
+            margin-top:64px;
+          }
+
+          .col-4-12 {
+            width: 33.33%;
+            position:fixed;
+                margin-top:64px;
+          }
+
+#sidebar {
+width:296px;
+}
+
+          #fuel-profile-card, #activity-feed, #equipment-card, #preferences-card {
+            width:47.5%;
+            display: inline-block;
+            margin-top:24px;
+            margin-left:-2px;
+
+          }
+
+          #activity-feed {
+                    margin-left:24px;
+                    float:right;
+                      }
+}
+
+@media screen and (max-width: 959px) and (min-width: 670px) {
+  .navbar {
+    height:56px;
+  }
+
+  .navbar li {
+    display: none;
+  }
+
+  #mobile {
+    display:inline-block;
+  }
+
+  .child-close {
+    display:inline-block;
+    line-height:56px;
+  }
+
+  .grid {
+    width:100%;
+    margin-bottom:24px;
+          }
+
+            .col-8-12 {
+            width: 100%;
+            padding-top:128px;
+          }
+
+          .col-4-12 {
+          display:none;
+          }
+
+
+
+          #fuel-profile-card, #activity-feed, #equipment-card, #preferences-card {
+            width:48%;
+            display: inline-block;
+            margin-top:24px;
+            margin-left: 0px;
+
+          }
+
+          #activity-feed {
+                    margin-left:24px;
+                    float:right;
+                      }
+}
+
+@media screen and (max-width: 669px) and (min-width: 320px) {
+.navbar {
+  height:56px;
+}
+
+.navbar li {
+  display: none;
+}
+
+#mobile {
+  display:inline-block;
+}
+.child-close {
+  display:inline-block;
+  line-height:56px;
+}
+
+  .grid {
+    width:100%;
+    margin-bottom:24px;
+          }
+
+            .col-8-12 {
+            width: 100%;
+            padding-top:128px;
+            padding-left: 0px;
+            padding-right:0px;
+          }
+
+          .col-4-12 {
+          display:none;
+          }
+
+
+
+          #fuel-profile-card, #activity-feed, #equipment-card, #preferences-card {
+            width:100%;
+            display: inline-block;
+            margin-top:16px;
+            margin-left:0px;
+
+          }
+#overview-card {
+  height:236px;
+}
+
+#fuel-profile-card {
+  height:215px;
+}
+
+#activity-feed {
+  height: 551px;
+}
+
+#equipment-card {
+height:222px;
+}
+
+#preferences-card {
+  height: 361px;
+}
+}

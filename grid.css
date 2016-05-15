@@ -9,6 +9,7 @@ body {
     font-family:PlexesPro;
     font-size:18px;
     margin:0;
+    overflow: auto;
 }
 
 .navbar {
@@ -92,6 +93,7 @@ span {
 }
 
 #sidebar {
+  overflow: auto;
   height: 640px;
   width:100%;
   padding-top: 100px;

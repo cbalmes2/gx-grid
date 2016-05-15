@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, target-densityDpi=device-dpi">
 </head>
 <body>
+  <script>
+  var body = document.getElementsByTagName('body')[0];
+function disableBodyScroll() {
+    body.style.overflowY = 'hidden';
+}
+function enableBodyScroll() {
+    body.style.overflowY = 'auto';
+}
+  </script>
   <div class="navbar">
     <ul id="desktop">
   <li>Today</li>
@@ -22,10 +31,41 @@
     Athlete Profile
   </div>
   <div class="grid">
-    <div class="col-4-12">
+    <div class="col-4-12" onmouseover="disableBodyScroll()" onmouseout="enableBodyScroll()">
        <div class="card-style">
           <div id="sidebar">
-          Left Nav
+          Left Nav<br> <br><br><br><br>
+          Play with different overflow property values.<br><br>
+
+To demonstrate the different property values, this text is repeated several times. <br><br>
+
+Play with different overflow property values.<br><br>
+
+To demonstrate the different property values, this text is repeated several times.<br><br>
+
+Play with different overflow property values.<br><br>
+
+To demonstrate the different property values, this text is repeated several times.<br><br>
+
+Play with different overflow property values.<br><br>
+
+To demonstrate the different property values, this text is repeated several times.<br><br>
+
+Play with different overflow property values.<br><br>
+
+To demonstrate the different property values, this text is repeated several times.<br><br>
+
+Play with different overflow property values.<br><br>
+
+To demonstrate the different property values, this text is repeated several times.<br><br>
+
+Play with different overflow property values.<br><br>
+
+To demonstrate the different property values, this text is repeated several times.<br><br>
+
+Play with different overflow property values.<br><br>
+
+To demonstrate the different property values, this text is repeated several times.<br><br>
           </div>
        </div>
     </div>

@@ -147,6 +147,11 @@ span {
   text-align: center;
   color:#FF00FF;
 }
+
+body::-webkit-scrollbar {
+    dispay:none;
+}
+
 /* Above 1280px */
 
 @media screen and (min-width: 1280px) {

@@ -147,15 +147,6 @@ span {
   text-align: center;
   color:#FF00FF;
 }
-<<<<<<< HEAD
-
-body::-webkit-scrollbar {
-    display:none;
-}
-
-=======
->>>>>>> parent of a0c4736... hid scrollbar
-/* Above 1280px */
 
 @media screen and (min-width: 1280px) {
   #mobile {
